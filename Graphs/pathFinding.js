@@ -1,4 +1,3 @@
-const logMaze = require("./logger");
 const NO_ONE = 0;
 const BY_A = 1;
 const BY_B = 2;
