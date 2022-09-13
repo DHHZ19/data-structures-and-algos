@@ -1,12 +1,13 @@
 # How to do Insertion Sort for beginners in JS
 
-If you don't know what insertion sort is I recommend giving it a try at the problem for 10 minutes then come back or just check out how to implement it in.
+If you don't know what insertion sort is I recommend giving it a try at the problem for 10 minutes then come back or just check out how to implement it.
  
 Here is Free Code Camps explanation: 
 This method works by building up a sorted array at the beginning of the list. It begins the sorted array with the first element. Then it inspects the next element and swaps it backwards into the sorted array until it is in sorted position. It continues iterating through the list and swapping new items backwards into the sorted portion until it reaches the end. This algorithm has quadratic time complexity in the average and worst cases. [Insertion Sort Problem](https://www.freecodecamp.org/learn/coding-interview-prep/algorithms/implement-insertion-sort) here are the instructions from Free Code Camp 
 
 Instructions: Write a function insertionSort which takes an array of integers as input and returns an array of these integers in sorted order from least to greatest.
 
+Insertion Sort is a qudratic algorthim meaning its O(n^2) making it a bad algorthim for production as it can cause performance issues. That being said I think its a nice algo to learn to pratice solving coding interview questions.
 ## The code
 
 ``` 
@@ -128,6 +129,6 @@ now the array looks like that^
 
 ### Resources and Others:
 
-Great explanation from Brain Holt on his frontend masters course website includes an explanation of the big o complexity [Insertion Sort Problem](https://btholt.github.io/complete-intro-to-computer-science/insertion-sort)
+Great explanation from Brain Holt on his Frontend Masters course website includes an explanation of the big o complexity for this alogrthim [Insertion Sort Problem](https://btholt.github.io/complete-intro-to-computer-science/insertion-sort)
 
 Also take a look at a visualization at [7 VisuAlgo.net](https://visualgo.net/en/sorting)
