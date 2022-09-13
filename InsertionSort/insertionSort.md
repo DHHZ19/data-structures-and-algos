@@ -89,7 +89,7 @@ We then ask if `array[1] > NumberToInsert && j >= 0 // this is true`
 
 So we move to the array[j] one to the right
 
-`[1,|3,5,6]`
+`[1, |3,5,6]`
 // notice array[1] is now empty
 
 #### Second iteration of inner loop
