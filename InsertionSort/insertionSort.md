@@ -28,16 +28,22 @@ function insertionSort(array) {
     // Notice the index starts at 1 leaving index 0 as the sorted array
     for(let i = 1; i < array.length; i++){
         // the number to insrt will always be the number we currently are on in this loop
-      let numberToInsert = array[i]
-      // We also iniatlize j
-      let j;
+        let numberToInsert = array[i]
+         // We also iniatlize j
+        let j;
+        // does the insertion when either array[j] > numberToInsert or j >= 0
         for(j = i - 1; array[j] > numberToInsert && j >= 0; j--){
           // moves the number to ther right
           array[j + 1] = array[j]
         }
+        // does the insertion
         array[j + 1] = numberToInsert
+
     }
     return array
   }
 
 ```
+
+## Footer 
+Great explantion from Brain Holt from his frontend masters course website [Insertion Sort Problem](https://www.freecodecamp.org/learn/coding-interview-prep/algorithms/implement-insertion-sort)
