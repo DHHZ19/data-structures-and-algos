@@ -45,7 +45,47 @@ function insertionSort(array) {
 
 ```
 ## Explanation
+#### First iteration of outer loop
 
+The whole point or jist of Insertion sort is that we assume we have a sorted half and a unsorted half and go from there.
+
+`let array = [1|3,-1,5,6]`
+
+#### First iteration of inner loop
+
+If we passed in this loop the very first interation would look like that. We are choosing index zero to be sorted and assuming the right side is unsorted.
+
+We then ask if `array[0] > array[1] && j >= 0 // this is false`
+
+
+So we move out of the loop and insert, now 3 is part of the sorted array
+
+`[1,3|-1,5,6]`
+
+``
+### Second iteration of outer loop
+Now numberToInsert = array[2] and j is going to equal 1
+#### Second iteration of inner loop 
+
+`[1,3|-1,5,6]`
+
+We then ask if `array[1] > array[2] && j >= 0 // this is false`
+
+
+```
+function insertionSort(array) {
+    for(let i = 1; i < array.length; i++){
+      let numberToInsert = array[i]
+      let j;
+        for(j = i - 1; array[j] > numberToInsert && j >= 0; j--){
+          array[j + 1] = array[j]
+        }
+        array[j + 1] = numberToInsert
+    }
+    return array
+  }
+
+```
 
 ### Resources and Others:
 
