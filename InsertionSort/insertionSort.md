@@ -95,6 +95,21 @@ j is not >= 0 so we dont do anything and move on from the loop
 we do the insertion 
 
 `[-1,1,3|5,6]`
+
+### Third iteration of outer loop
+Now numberToInsert = array[3] and j is going to equal 2
+#### First Iteration of inner loop
+`[-1,1,3|5,6]` // notice the array is already sorted but insertion sort doesn't know that
+
+We then ask if `array[2] > NumberToInsert && j >= 0 // this is false`
+
+So we insert at 5, 5 is already there
+
+`[-1,1,3,5|6]`
+
+now the array looks like that^
+
+// the last iteration of the is going to look very similary as this iteration.
 ```
 function insertionSort(array) {
     for(let i = 1; i < array.length; i++){
