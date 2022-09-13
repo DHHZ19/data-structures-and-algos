@@ -118,7 +118,7 @@ j is not >= 0 so we don't do anything and move on from the loop
 
 we do the insertion
 
-`[-1,1,3|5,6]`
+`[-1,1|3,5,6]`
 
 ### Third iteration of outer loop
 
@@ -137,6 +137,8 @@ So we insert at 5, 5 is already there
 now the array looks like that^
 
 // the last iteration of the is going to look very similarly as this iteration.
+
+**Comment any questions and let me know how I can imporve my explanation. This algo took me longer to understand then I thought it would so if your struggling know I did too!**
 
 ### Resources and Others:
 
