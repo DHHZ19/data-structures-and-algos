@@ -79,7 +79,6 @@ So we move out of the loop and insert, now 3 is part of the sorted array
 
 `[1,3|-1,5,6]`
 
-``
 ### Second iteration of outer loop
 Now numberToInsert = array[2] and j is going to equal 1
 #### Frist iteration of inner loop 
