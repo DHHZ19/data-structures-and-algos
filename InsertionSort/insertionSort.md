@@ -49,6 +49,7 @@ function insertionSort(array) {
 
 We will start with this array to sort `[1|3,-1,5,6]`
 
+**Everything to the left of the pipe character is assumed to be the sorted array everything to the right is the unsorted.
 ```
 function insertionSort(array) {
     for(let i = 1; i < array.length; i++){
