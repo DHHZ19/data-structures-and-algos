@@ -65,13 +65,34 @@ So we move out of the loop and insert, now 3 is part of the sorted array
 ``
 ### Second iteration of outer loop
 Now numberToInsert = array[2] and j is going to equal 1
-#### Second iteration of inner loop 
+#### Frist iteration of inner loop 
 
 `[1,3|-1,5,6]`
 
-We then ask if `array[1] > array[2] && j >= 0 // this is false`
+We then ask if `array[1] > NumberToInsert && j >= 0 // this is true`
 
+So we move to the array[j] one to the right
 
+`[1,|3,5,6]`
+// notice array[1] is now empty
+
+#### Second iteration of inner loop
+
+We then ask if `array[0] > NumberToInsert && j >= 0 // this is true`
+
+so we move to the array[0] to the right
+
+`[,1,3,5,6]`
+// notice array[0] is now empty
+
+#### Third iteration of inner loop
+We then ask if `array[-1] > NumberToInsert && j >= 0 // this is true`
+
+j is not >= 0 so we dont do anything and move on from the loop
+
+we do the insertion 
+
+`[-1,1,3|5,6]`
 ```
 function insertionSort(array) {
     for(let i = 1; i < array.length; i++){
