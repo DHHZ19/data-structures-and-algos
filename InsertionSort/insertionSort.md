@@ -9,6 +9,8 @@ Instructions: Write a function insertionSort which takes an array of integers as
 
 Insertion Sort is a qudratic algorthim meaning its O(n^2) making it a bad algorthim for production as it can cause performance issues. That being said I think its a nice algo to learn to pratice solving coding interview questions.
 
+This algo is also known as destructive as it opperates on the array that is passed in on the function.
+
 ## The code
 
 ```
@@ -76,9 +78,9 @@ The whole point or jist of Insertion sort is that we assume we have a sorted hal
 
 #### First iteration of inner loop
 
-If we passed in this loop the very first interation would look like that. We are choosing index zero to be sorted and assuming the right side is unsorted.
+If we passed in this loop the very first interation would look like the array above. We are choosing index zero to be sorted and assuming the right side is unsorted.
 
-We then ask if `array[0] > array[1] && j >= 0 // this is false`
+We then ask if `array[0] > numberToInsert && j >= 0 // this is false`
 
 So we move out of the loop and insert, now 3 is part of the sorted array
 
