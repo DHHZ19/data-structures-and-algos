@@ -44,6 +44,8 @@ function insertionSort(array) {
   }
 
 ```
+## Explanation
+
 
 ### Footer 
-Great explantion from Brain Holt from his frontend masters course website [Insertion Sort Problem](https://www.freecodecamp.org/learn/coding-interview-prep/algorithms/implement-insertion-sort)
+Great explantion from Brain Holt on his frontend masters course website [Insertion Sort Problem](https://www.freecodecamp.org/learn/coding-interview-prep/algorithms/implement-insertion-sort)
