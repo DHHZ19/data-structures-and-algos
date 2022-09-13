@@ -25,7 +25,6 @@ function insertionSort(array) {
   }
   return array;
 }
-//
 // commented
 function insertionSort(array) {
     // We make a double for loop
