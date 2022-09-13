@@ -1,4 +1,4 @@
-### Insertion sort is a qudratic alogrithim and is not used it production but it is a algo thats taught. 
+# Insertion sort is a qudratic alogrithim and is not used it production but it is a algo thats taught. 
 
 If you dont know what insrtion sort is I recommend taking a stab at the problem for 10 mintues then come back or just check out how to implement it in.
  
@@ -45,5 +45,5 @@ function insertionSort(array) {
 
 ```
 
-## Footer 
+### Footer 
 Great explantion from Brain Holt from his frontend masters course website [Insertion Sort Problem](https://www.freecodecamp.org/learn/coding-interview-prep/algorithms/implement-insertion-sort)
