@@ -128,6 +128,6 @@ now the array looks like that^
 
 ### Resources and Others:
 
-Great explanation from Brain Holt on his frontend masters course website [Insertion Sort Problem](https://www.freecodecamp.org/learn/coding-interview-prep/algorithms/implement-insertion-sort)
+Great explanation from Brain Holt on his frontend masters course website includes an explanation of the big o complexity [Insertion Sort Problem](https://btholt.github.io/complete-intro-to-computer-science/insertion-sort)
 
 Also take a look at a visualization at [7 VisuAlgo.net](https://www.freecodecamp.org/learn/coding-interview-prep/algorithms/implement-insertion-sort)
