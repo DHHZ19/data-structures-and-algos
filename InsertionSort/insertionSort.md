@@ -45,6 +45,8 @@ function insertionSort(array) {
 
 ```
 ## Explanation
+
+We will start with this array [1|3,-1,5,6]
 ### First iteration of outer loop
 
 The whole point or jist of Insertion sort is that we assume we have a sorted half and a unsorted half and go from there.
