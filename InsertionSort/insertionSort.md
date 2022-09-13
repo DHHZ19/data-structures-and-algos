@@ -1,6 +1,6 @@
-# Insertion sort is a qudratic alogrithim and is not used it production but it is a algo thats taught. 
+# How to do Insertion Sort for beginners in JS
 
-If you dont know what insrtion sort is I recommend taking a stab at the problem for 10 mintues then come back or just check out how to implement it in.
+If you dont know what insrtion sort is I recommend giving it a try at the problem for 10 mintues then come back or just check out how to implement it in.
  
 Here is Free Code Camps explnantion: 
 This method works by building up a sorted array at the beginning of the list. It begins the sorted array with the first element. Then it inspects the next element and swaps it backwards into the sorted array until it is in sorted position. It continues iterating through the list and swapping new items backwards into the sorted portion until it reaches the end. This algorithm has quadratic time complexity in the average and worst cases. [Insertion Sort Problem](https://www.freecodecamp.org/learn/coding-interview-prep/algorithms/implement-insertion-sort) here are the instructions from Free Code Camp 
