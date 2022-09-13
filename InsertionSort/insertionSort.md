@@ -1,28 +1,29 @@
 # How to do Insertion Sort for beginners in JS
 
 If you don't know what insertion sort is I recommend giving it a try at the problem for 10 minutes then come back or just check out how to implement it.
- 
-Here is Free Code Camps explanation: 
-This method works by building up a sorted array at the beginning of the list. It begins the sorted array with the first element. Then it inspects the next element and swaps it backwards into the sorted array until it is in sorted position. It continues iterating through the list and swapping new items backwards into the sorted portion until it reaches the end. This algorithm has quadratic time complexity in the average and worst cases. [Insertion Sort Problem](https://www.freecodecamp.org/learn/coding-interview-prep/algorithms/implement-insertion-sort) here are the instructions from Free Code Camp 
+
+Here is Free Code Camps explanation:
+This method works by building up a sorted array at the beginning of the list. It begins the sorted array with the first element. Then it inspects the next element and swaps it backwards into the sorted array until it is in sorted position. It continues iterating through the list and swapping new items backwards into the sorted portion until it reaches the end. This algorithm has quadratic time complexity in the average and worst cases. [Insertion Sort Problem](https://www.freecodecamp.org/learn/coding-interview-prep/algorithms/implement-insertion-sort) here are the instructions from Free Code Camp
 
 Instructions: Write a function insertionSort which takes an array of integers as input and returns an array of these integers in sorted order from least to greatest.
 
 Insertion Sort is a qudratic algorthim meaning its O(n^2) making it a bad algorthim for production as it can cause performance issues. That being said I think its a nice algo to learn to pratice solving coding interview questions.
+
 ## The code
 
-``` 
+```
 function insertionSort(array) {
-    for(let i = 1; i < array.length; i++){
-      let numberToInsert = array[i]
-      let j;
-        for(j = i - 1; array[j] > numberToInsert && j >= 0; j--){
-          array[j + 1] = array[j]
-        }
-        array[j + 1] = numberToInsert
+  for (let i = 1; i < array.length; i++) {
+    let numberToInsert = array[i];
+    let j;
+    for (j = i - 1; array[j] > numberToInsert && j >= 0; j--) {
+      array[j + 1] = array[j];
     }
-    return array
+    array[j + 1] = numberToInsert;
   }
-
+  return array;
+}
+//
 // commented
 function insertionSort(array) {
     // We make a double for loop
@@ -45,25 +46,28 @@ function insertionSort(array) {
   }
 
 ```
+
 ## Explanation
 
 We will start with this array to sort `[1|3,-1,5,6]`
 
 **Everything to the left of the pipe character is assumed to be the sorted array everything to the right is the unsorted.**
-```
-function insertionSort(array) {
-    for(let i = 1; i < array.length; i++){
-      let numberToInsert = array[i]
-      let j;
-        for(j = i - 1; array[j] > numberToInsert && j >= 0; j--){
-          array[j + 1] = array[j]
-        }
-        array[j + 1] = numberToInsert
-    }
-    return array
-  }
 
 ```
+function insertionSort(array) {
+  for (let i = 1; i < array.length; i++) {
+    let numberToInsert = array[i];
+    let j;
+    for (j = i - 1; array[j] > numberToInsert && j >= 0; j--) {
+      array[j + 1] = array[j];
+    }
+    array[j + 1] = numberToInsert;
+  }
+  return array;
+}
+
+```
+
 ### First iteration of outer loop
 
 The whole point or jist of Insertion sort is that we assume we have a sorted half and a unsorted half and go from there.
@@ -76,14 +80,15 @@ If we passed in this loop the very first interation would look like that. We are
 
 We then ask if `array[0] > array[1] && j >= 0 // this is false`
 
-
 So we move out of the loop and insert, now 3 is part of the sorted array
 
 `[1,3|-1,5,6]`
 
 ### Second iteration of outer loop
+
 Now numberToInsert = array[2] and j is going to equal 1
-#### First iteration of inner loop 
+
+#### First iteration of inner loop
 
 `[1,3|-1,5,6]`
 
@@ -104,17 +109,21 @@ so we move to the array[0] to the right
 // notice array[0] is now empty
 
 #### Third iteration of inner loop
+
 We then ask if `array[-1] > NumberToInsert && j >= 0 // this is true`
 
 j is not >= 0 so we don't do anything and move on from the loop
 
-we do the insertion 
+we do the insertion
 
 `[-1,1,3|5,6]`
 
 ### Third iteration of outer loop
+
 Now numberToInsert = array[3] and j is going to equal 2
+
 #### First Iteration of inner loop
+
 `[-1,1,3|5,6]` // notice the array is already sorted but insertion sort doesn't know that
 
 We then ask if `array[2] > NumberToInsert && j >= 0 // this is false`
@@ -126,7 +135,6 @@ So we insert at 5, 5 is already there
 now the array looks like that^
 
 // the last iteration of the is going to look very similarly as this iteration.
-
 
 ### Resources and Others:
 
